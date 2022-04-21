@@ -1,0 +1,12 @@
+.produto__container{
+    width: 100%;
+    max-width: 1200px;
+    padding: 16px;
+    background-color: brown;
+}
+
+.produto__card__container{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}

@@ -21,14 +21,18 @@ export class ItemService {
     });
  }
 
- async findOne(id: string): Promise<Item> {
-    const item = await this.repository.findOne(id);
+ findOne(id: string): Promise<Item> {
+  return this.repository.findOne(id);
+}
 
-    if (!item) {
-      throw new NotFoundException(`Item ${id} not found`);
-    }
-    return;
- }
+//  async findOne(id: string): Promise<Item> {
+//     const item = await this.repository.findOne(id);
+
+//     if (!item) {
+//       throw new NotFoundException(`Item ${id} not found`);
+//     }
+//     return;
+//  }
 
  async update(id: string, updateItemDto: UpdateItemDto): Promise<Item> {
    const item = await this.repository.preload({

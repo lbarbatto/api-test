@@ -1,0 +1,17 @@
+.inicio__container{
+
+}
+
+.logo__lista{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    width: 50%;
+}
+
+.bt__lista{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
