@@ -12,20 +12,27 @@
   background-color:darkgreen;
   font-size: 16px;
   font-weight: 700;
+  color: white;
 }
 
 .menu{
   background-color: darkolivegreen;
-  padding: 16px;
+  padding: 16px;  
+}
+
+.api_content{
+  background-color:bisque;
 }
 
 .footer{
   background-color: darkgreen;
   text-align: center;
   font-weight: 600;
+  color: white;
 }
 
 .menu__section{
   background-color: darkolivegreen;
   border: none;
+  color: white;
 }

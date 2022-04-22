@@ -1,12 +1,10 @@
 .produto__container{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1200;
     padding: 16px;
-    background-color:rosybrown;
 }
 
 .produto__card__container{
     display: flex;
     flex-direction: row;
-    gap: 16px;
 }

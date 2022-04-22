@@ -19,7 +19,7 @@ export default function Inicio(){
                 <img className='logo__lista' src={Logo} alt='logo' />
                 <br/>
 
-                <Button className='bt__lista' onClick={listarProdutos}>Ver Produtos</Button>
+                <Button className='bt__lista' onClick={listarProdutos} type="default">Produtos</Button>
             </section>
         </div>
     )

@@ -1,5 +1,5 @@
 .inicio__container{
-
+    margin: none;
 }
 
 .logo__lista{
@@ -7,7 +7,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 16px;
-    width: 50%;
+    height: 50vh;
 }
 
 .bt__lista{

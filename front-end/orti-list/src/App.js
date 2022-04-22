@@ -12,7 +12,7 @@ function App() {
   return (
     <div className='main'>
       <Layout className='main__content'>
-        <Header className='header'>Header</Header>
+        <Header className='header'>Lista de Compras</Header>
         <Layout>
           <Sider className='menu'>
             <Menu className='menu__section'>
@@ -24,7 +24,7 @@ function App() {
               </Menu.Item>
             </Menu>
           </Sider>
-          <Content>
+          <Content className='api_content'>
             <Routes/>
           </Content>
         </Layout>
