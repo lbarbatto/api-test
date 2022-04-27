@@ -10,14 +10,14 @@
 
 .header{
   background-color:darkgreen;
-  font-size: 16px;
+  font-size: xx-large;
   font-weight: 700;
   color: white;
 }
 
 .menu{
-  background-color: darkolivegreen;
-  padding: 16px;  
+  background-color: #640000;
+  padding: 20px;
 }
 
 .api_content{
@@ -30,10 +30,11 @@
   text-align: center;
   font-weight: 600;
   color: white;
+  padding: auto;
 }
 
 .menu__section{
-  background-color: darkolivegreen;
+  background-color: #640000;
   border: none;
   color: white;
 }

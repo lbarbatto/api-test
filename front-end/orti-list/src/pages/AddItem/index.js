@@ -34,13 +34,13 @@ export default function AddItem(){
             <div>
                 <Form 
                 name="basic"
-                labelCol={{ span: 8}}
+                labelCol={{ span: 4}}
                 wrapperCol={{ span: 16}}
                 onFinish={handleSubmit}
                 autoComplete="off"
                 >
                         <Form.Item 
-                        label='Nome do Produto'
+                        label='Nome'
                         name="name"
                         rules={[{ required: true, message: "Defina um produto"}]}
                         >

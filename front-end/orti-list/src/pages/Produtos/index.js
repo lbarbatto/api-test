@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 
 import './styles.css';
 
-import { Button, Card, Col, Row } from 'antd';
+import { Button, Card } from 'antd';
 
 export default function Produtos(){
     const [ produtos, setProdutos] = useState([])

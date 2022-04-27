@@ -8,3 +8,10 @@
     display: flex;
     flex-direction: row;
 }
+
+.item__card--actions{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

@@ -4,8 +4,8 @@ import api from '../../services/api';
 import { useParams, useHistory } from 'react-router-dom';
 import './styles.css';
 
-import { Button, Card, message, Modal } from 'antd';
-import { ExclamationCircleOutlined } from '@ant-design/icons';
+import { Tooltip, Button, Card, message, Modal } from 'antd';
+import { ExclamationCircleOutlined, EditTwoTone, DeleteTwoTone } from '@ant-design/icons';
 
 export default function DetalhesProduto(){
 
@@ -64,7 +64,21 @@ export default function DetalhesProduto(){
                     <p>Data de Atualização: {produto.updatedAt}</p>
                     <p>Descrição: {produto.description}</p>
                     <p>Quantidade: {produto.quantity}</p>
-                    <Button type='primary' danger onClick={() => showConfirm(produto)}>Excluir</Button>
+                    <hr/>
+                    <div className='item__card--actions'>
+                        <Tooltip title="Editar">
+                            <Button type='text' shape="circle" size="large"
+                            icon={<EditTwoTone twoToneColor="#52c41a" />}
+                            onClick={() => history.push(`/edit/${produto.id}`, produto)}>                                
+                            </Button>
+                        </Tooltip>
+                        <Tooltip title="Excluir">
+                            <Button type='text' danger shape="circle" size="large"
+                            icon={<DeleteTwoTone twoToneColor="#640000" />}                            
+                            onClick={() => showConfirm(produto)}>
+                            </Button>                        
+                        </Tooltip>
+                    </div>
                 </Card>
             </div>
 
