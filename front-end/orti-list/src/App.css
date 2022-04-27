@@ -21,6 +21,7 @@
 }
 
 .api_content{
+  height: inherit;
   background-color:bisque;
 }
 

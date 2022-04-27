@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 
 import './styles.css';
 
-import { Button, Card } from 'antd';
+import { Button, Card, Col, Row } from 'antd';
 
 export default function Produtos(){
     const [ produtos, setProdutos] = useState([])
@@ -27,13 +27,12 @@ export default function Produtos(){
 
             <div className="produto__card__container">
                 {produtos.map(produto => (
-                    <Card key={produto.id} title={produto.name} bordered={false} style={{ width: 300 }}>
+                    <Card key={produto.id} title={produto.name} bordered={false} style={{ width: 300, margin: 16 }}>
                         <p>Descrição: {produto.description}</p>
                         <p>Quantidade: {produto.quantity}</p>
                         <Button onClick={() => history.push(`/detalhes/${produto.id}`)}>Detalhes</Button>
                     </Card>
-                ))}
-
+                    ))}
             </div>
         </div>
     )
